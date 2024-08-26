@@ -66,6 +66,6 @@ def predict(stock_symbol):
     return prediction, current_price, predicted_price
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0")
 
 
