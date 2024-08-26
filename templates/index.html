@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Intraday Trading Prediction App</title>
+</head>
+<body>
+<h1>Intraday Trading Prediction App</h1>
+<p>Currently working for US stocks only</p>
+<p>For APPLE stock type AAPL</p>
+<form method="POST">
+<label for="stock_symbol">Enter Stock Symbol:</label>
+<input type="text" id="stock_symbol" name="stock_symbol" required>
+<button type="submit">Predict</button>
+</form>
+{% if prediction %}
+<p>Current Price: {{ current_price }}</p>
+<p>Predicted Price: {{ predicted_price }}</p>
+<p>Prediction: {{ prediction }}</p>
+{% endif %}
+</body>
+</html>
